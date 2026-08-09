@@ -1,5 +1,7 @@
 import './App.css'
 import Header from './components/Header'
+import Hero from './sections/Hero'
+import Profile from './sections/Profile'
 
 function App() {
   return (
@@ -7,7 +9,8 @@ function App() {
       <Header />
 
       <main>
-        <h1>Ranadip Das Portfolio</h1>
+        <Hero />
+        <Profile />
       </main>
     </>
   )

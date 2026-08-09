@@ -37,6 +37,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 body{
   margin: 0;
@@ -120,3 +121,4 @@ p {
     animation-iteration-count: 1 !important;
   }
 }
+
