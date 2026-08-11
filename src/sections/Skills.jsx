@@ -1,119 +1,195 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaMobileAlt,
+  FaPhp,
+  FaDatabase,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa"
+
+import {
+  SiMysql,
+  SiVite,
+} from "react-icons/si"
+
 const skillGroups = [
   {
-    title: 'Frontend',
+    title: "Frontend",
     skills: [
       {
-        name: 'HTML',
-        description: 'Semantic page structure and accessible markup.',
+        name: "HTML5",
+        level: "Advanced",
+        levelClass: "advanced",
+        strength: 90,
+        icon: FaHtml5,
       },
       {
-        name: 'CSS',
-        description: 'Responsive layouts, custom styling and interface design.',
+        name: "CSS3",
+        level: "Advanced",
+        levelClass: "advanced",
+        strength: 88,
+        icon: FaCss3Alt,
       },
       {
-        name: 'JavaScript',
-        description: 'Interactive behavior, DOM logic and frontend functionality.',
+        name: "JavaScript",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 72,
+        icon: FaJs,
       },
       {
-        name: 'React',
-        description: 'Component-based frontend development and reusable UI.',
+        name: "React",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 68,
+        icon: FaReact,
+      },
+      {
+        name: "Responsive Design",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 78,
+        icon: FaMobileAlt,
       },
     ],
   },
+
   {
-    title: 'Backend',
+    title: "Backend & Database",
     skills: [
       {
-        name: 'PHP',
-        description: 'Authentication, application logic and server-side workflows.',
+        name: "PHP",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 72,
+        icon: FaPhp,
+      },
+      {
+        name: "MySQL",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 74,
+        icon: SiMysql,
+      },
+      {
+        name: "PDO",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 70,
+        icon: FaDatabase,
       },
     ],
   },
+
   {
-    title: 'Database',
+    title: "Tools & Workflow",
     skills: [
       {
-        name: 'MySQL',
-        description: 'Relational data, queries and application database design.',
+        name: "Git",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 68,
+        icon: FaGitAlt,
       },
       {
-        name: 'RDBMS',
-        description: 'Relational concepts, keys, relationships and normalization.',
-      },
-    ],
-  },
-  {
-    title: 'Development',
-    skills: [
-      {
-        name: 'Responsive Design',
-        description: 'Interfaces designed to adapt across desktop and mobile.',
+        name: "GitHub",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 72,
+        icon: FaGithub,
       },
       {
-        name: 'Authentication',
-        description: 'Login flows, access control and protected user areas.',
+        name: "Vite",
+        level: "Working Knowledge",
+        levelClass: "working",
+        strength: 58,
+        icon: SiVite,
       },
       {
-        name: 'Session Management',
-        description: 'Maintaining secure authenticated user sessions.',
+        name: "VS Code",
+        level: "Advanced",
+        levelClass: "advanced",
+        strength: 88,
+        icon: FaDatabase,
       },
       {
-        name: 'SDLC',
-        description: 'Structured planning, development, testing and improvement.',
-      },
-    ],
-  },
-  {
-    title: 'Tools & Workflow',
-    skills: [
-      {
-        name: 'Git',
-        description: 'Version control and structured development history.',
-      },
-      {
-        name: 'GitHub',
-        description: 'Repository management, collaboration and project publishing.',
-      },
-      {
-        name: 'VS Code',
-        description: 'Primary development environment.',
+        name: "XAMPP",
+        level: "Intermediate",
+        levelClass: "intermediate",
+        strength: 75,
+        icon: FaDatabase,
       },
     ],
   },
 ]
 
+
 function Skills() {
   return (
     <section className="skills" id="skills">
-      <div className="container">
-        <div className="skills-heading">
-          <p className="section-label">02 / Technical Toolkit</p>
+      <div className="skills-container">
 
-          <h2>
-            Technologies I work with,
-            <span> organized by how I use them.</span>
-          </h2>
+        <div className="section-heading">
+          <span className="section-number">02</span>
+
+          <div>
+            <p className="section-label">SKILLS</p>
+            <h2>Technologies I work with.</h2>
+          </div>
         </div>
 
-        <div className="skills-grid">
+        <div className="skills-groups">
+
           {skillGroups.map((group) => (
-            <article className="skill-group" key={group.title}>
-              <h3>{group.title}</h3>
+            <div className="skills-category" key={group.title}>
 
-              <div className="skill-list">
-                {group.skills.map((skill) => (
-                  <div className="skill-item" key={skill.name}>
-                    <strong>{skill.name}</strong>
-                    <p>{skill.description}</p>
-                  </div>
-                ))}
+              <div className="skills-category-heading">
+                <h3>{group.title}</h3>
               </div>
-            </article>
+
+              <div className="skills-cards">
+
+                {group.skills.map((skill) => {
+                  const Icon = skill.icon
+
+                  return (
+                    <article className="skill-card" key={skill.name}>
+
+                      <div className="skill-icon">
+                        <Icon />
+                      </div>
+
+                      <div className="skill-info">
+                        <h4>{skill.name}</h4>
+                        <span className={`skill-level ${skill.levelClass}`}>
+                          {skill.level}
+                        </span>
+                      </div>
+
+                      <div className={`skill-progress ${skill.levelClass}`}>
+                        <span
+                          style={{ width: `${skill.strength}%` }}
+                        ></span>
+                      </div>
+
+                    </article>
+                  )
+                })}
+
+              </div>
+
+            </div>
           ))}
+
         </div>
+
       </div>
     </section>
   )
 }
+
 
 export default Skills

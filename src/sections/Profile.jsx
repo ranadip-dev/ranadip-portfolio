@@ -1,65 +1,53 @@
 function Profile() {
   return (
-    <section className="profile" id="about">
-      <div className="container">
-        <div className="profile-heading">
-          <p className="section-label">01 / Developer Profile</p>
+    <section className="profile" id="profile">
+      <div className="profile-container">
 
-          <h2>
-            Building toward the frontend,
-            <span> with full-stack understanding.</span>
-          </h2>
+        <div className="section-heading">
+          <span className="section-number">01</span>
+
+          <div>
+            <p className="section-label">ABOUT ME</p>
+            <h2>Developer with a practical approach.</h2>
+          </div>
         </div>
 
-        <div className="profile-grid">
-          <div className="profile-story">
+        <div className="profile-content">
+
+          <div className="profile-intro">
             <p>
-              I'm an MCA student focused on becoming a professional frontend
-              developer, with hands-on experience building complete web
-              applications using HTML, CSS, JavaScript, PHP, and MySQL.
+              I&apos;m a developer focused on building clean, responsive
+              interfaces and practical full-stack web applications.
             </p>
 
             <p>
-              My development experience goes beyond interface design. Building
-              full-stack projects has given me practical exposure to
-              authentication, session management, relational databases,
-              backend logic, and administrative workflows.
-            </p>
-
-            <p>
-              Before focusing seriously on software development, I worked in
-              market research and international client communication. That
-              experience strengthened how I approach requirements, research,
-              problem solving, planning, and communication.
+              My work combines front-end development with hands-on backend
+              experience using PHP and MySQL, giving me an understanding of
+              complete application workflows rather than isolated interfaces.
             </p>
           </div>
 
           <div className="profile-details">
+
             <div className="profile-detail">
-              <span>Focus</span>
-              <strong>Frontend Development</strong>
-              <p>Responsive, structured and user-focused interfaces.</p>
+              <span>FOCUS</span>
+              <strong>Front-End Development</strong>
             </div>
 
             <div className="profile-detail">
-              <span>Full-Stack Experience</span>
-              <strong>PHP + MySQL</strong>
-              <p>Authentication, application logic and relational data.</p>
+              <span>ALSO BUILDING</span>
+              <strong>Full-Stack Applications</strong>
             </div>
 
             <div className="profile-detail">
-              <span>Currently</span>
-              <strong>React + MCA</strong>
-              <p>Expanding modern frontend and software engineering skills.</p>
+              <span>CORE STACK</span>
+              <strong>React · JavaScript · PHP · MySQL</strong>
             </div>
 
-            <div className="profile-detail">
-              <span>Approach</span>
-              <strong>Build → Test → Improve</strong>
-              <p>Understand the problem, implement carefully and refine.</p>
-            </div>
           </div>
+
         </div>
+
       </div>
     </section>
   )
