@@ -6,8 +6,8 @@ const projects = [
     type: "Full-Stack Booking Platform",
     description:
       "End-to-end travel booking platform connecting customer booking workflows with role-based administrative operations.",
-    stack: ["PHP", "MySQL", "JavaScript", "PDO"],
-    image: "/uraan-home.jpg",
+    stack: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "PDO"],
+    image: "/uraan-home.png",
     liveUrl: "YOUR_LIVE_DEMO_URL",
     githubUrl: "YOUR_GITHUB_REPO_URL",
     caseStudyUrl: "#uraan-case-study",

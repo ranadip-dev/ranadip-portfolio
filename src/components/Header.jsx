@@ -16,7 +16,7 @@ function Header() {
                         <a href="#projects">Work</a>
                         <a href="#skills">Skills</a>
                         <a href="#about">Profile</a>
-                        <a href="journey">Journey</a>
+                        <a href="#journey">Journey</a>
                         <a href="#contact">Contact</a>
                     </div>
 
