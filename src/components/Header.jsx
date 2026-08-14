@@ -13,16 +13,16 @@ function Header() {
                     <a href="#home" className="navbar-logo" aria-label="Ranadip Das - Home" onClick={closeMenu}>RD<span>.</span></a>
 
                     <div className="navbar-links">
-                        <a href="#projects">Work</a>
+                        <a href="#projects">Projects</a>
                         <a href="#skills">Skills</a>
-                        <a href="#about">Profile</a>
+                        <a href="#profile">About</a>
                         <a href="#journey">Journey</a>
                         <a href="#contact">Contact</a>
                     </div>
 
                     <div className="navbar-actions">
                         <a href="https://github.com/ranadip-dev" target="_blank" rel="noreferrer">
-                        Github
+                        GitHub
                         </a>
 
                         <a href="/Ranadip_Das_Resume.pdf" className="button">
@@ -40,9 +40,9 @@ function Header() {
                 </nav>
 
                 <div className={`mobile-menu ${menuOpen ? 'is-open' : ''}`}>
-                    <a href="#projects" onClick={closeMenu}>Work</a>
+                    <a href="#projects" onClick={closeMenu}>Projects</a>
                     <a href="#skills" onClick={closeMenu}>Skills</a>
-                    <a href="#about" onClick={closeMenu}>Profile</a>
+                    <a href="#profile" onClick={closeMenu}>About</a>
                     <a href="#journey" onClick={closeMenu}>Journey</a>
                     <a href="#contact" onClick={closeMenu}>Contact</a>
 

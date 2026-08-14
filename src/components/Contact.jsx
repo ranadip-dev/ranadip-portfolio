@@ -25,15 +25,14 @@ function Contact() {
           {/* LEFT SIDE */}
 
           <div className="contact-connect">
-            <p className="contact-kicker">LET&apos;S CONNECT</p>
+            <p className="contact-kicker">LET'S CONNECT</p>
 
             <h3>
               Have an opportunity, project or idea in mind?
             </h3>
 
             <p className="contact-copy">
-              I&apos;m open to developer opportunities, collaborations and
-              conversations around building useful web experiences.
+              I’m open to developer opportunities, collaborations, and projects where I can build practical web experiences and continue growing as a developer.
             </p>
 
             <div className="contact-socials">
@@ -162,7 +161,7 @@ function Contact() {
             </form>
 
             <p className="contact-form-note">
-              Message delivery will be connected later.
+              I'll get back to you soon.
             </p>
 
           </div>
@@ -172,11 +171,11 @@ function Contact() {
 
         <footer className="portfolio-footer">
           <span>
-            © 2026 Ranadip Das
+            © 2026 - All Rights Reserved.
           </span>
 
           <span className="footer-mark">
-            RD.
+            Ranadip Das
           </span>
         </footer>
 

@@ -1,3 +1,4 @@
+import LatticeBackground from "./components/LatticeBackground"
 import './App.css'
 import Header from './components/Header'
 import Hero from './sections/Hero'
@@ -10,20 +11,23 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <>
-      <Header />
+  <div className="portfolio-app">
 
-      <main>
-        <Hero />
-        <Profile />
-        <Skills />
-        <Projects />
-        <UraanCaseStudy />
-        <Journey />
-        <Contact />
-      </main>
-    </>
-  )
+    <LatticeBackground />
+
+    <div className="portfolio-content">
+      <Header />
+      <Hero />
+      <Profile />
+      <Skills />
+      <Projects />
+      <UraanCaseStudy />
+      <Journey />
+      <Contact />
+    </div>
+
+  </div>
+)
 }
 
 export default App

@@ -212,7 +212,7 @@ function Journey() {
                     2020 - 2023
                     </span>
 
-                    <strong>CGPA 8.01</strong>
+                    <strong>CGPA - 8.01</strong>
                 </div>
                 </div>
 
@@ -235,7 +235,7 @@ function Journey() {
                     2018 - 2020
                     </span>
 
-                    <strong>82.2%</strong>
+                    <strong>Parcentage - 82.2%</strong>
                 </div>
                 </div>
 
