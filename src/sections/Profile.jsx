@@ -16,7 +16,7 @@ function Profile() {
 
           <div className="profile-intro">
             <p>
-              I&apos;m a developer focused on building clean, responsive
+              I'm a developer focused on building clean, responsive
               interfaces and practical full-stack web applications.
             </p>
 

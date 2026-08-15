@@ -1,16 +1,22 @@
+import {
+  FaExternalLinkAlt,
+  FaGithub,
+  FaArrowRight,
+} from "react-icons/fa"
+
 const projects = [
   {
     id: "uraan",
     badge: "FULL-STACK",
     title: "Uraan Travel Agency",
-    type: "Full-Stack Booking Platform",
+    type: "Booking Platform",
     description:
-      "End-to-end travel booking platform connecting customer booking workflows with role-based administrative operations.",
-    stack: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "PDO"],
+      "End-to-end travel booking platform connecting customer workflows with role-based administrative operations.",
+    stack: ["HTML", "CSS","PHP", "MySQL", "JavaScript", "PDO"],
     image: "/uraan-home.png",
-    liveUrl: "YOUR_LIVE_DEMO_URL",
-    githubUrl: "YOUR_GITHUB_REPO_URL",
-    caseStudyUrl: "#uraan-case-study",
+    liveUrl: "https://uraan-travel-agency.vercel.app/",
+    githubUrl: "https://github.com/ranadip-dev/Uraan_travel_agency.git",
+    caseStudyUrl: "/projects/uraan",
   },
 ]
 
@@ -29,35 +35,48 @@ function Projects() {
         </div>
 
         <div className="projects-grid">
-          {projects.map((project) => (
-            <article className="project-card" key={project.id}>
 
-              <div className="project-image">
+          {projects.map((project) => (
+            <article
+              className="project-card-modern"
+              key={project.id}
+            >
+
+              <div className="project-card-image">
                 <img
                   src={project.image}
                   alt={`${project.title} project preview`}
                 />
+
+                <div className="project-image-overlay">
+                  <span>{project.badge}</span>
+                </div>
               </div>
 
-              <div className="project-content">
 
-                <div className="project-top">
-                  <span className="project-badge">
-                    {project.badge}
-                  </span>
+              <div className="project-card-body">
 
-                  <span className="project-type">
-                    {project.type}
+                <div className="project-card-heading">
+                  <div>
+                    <span className="project-card-type">
+                      {project.type}
+                    </span>
+
+                    <h3>{project.title}</h3>
+                  </div>
+
+                  <span className="project-index">
+                    01
                   </span>
                 </div>
 
-                <h3>{project.title}</h3>
 
-                <p className="project-description">
+                <p className="project-card-description">
                   {project.description}
                 </p>
 
-                <div className="project-stack">
+
+                <div className="project-card-stack">
                   {project.stack.map((technology) => (
                     <span key={technology}>
                       {technology}
@@ -65,32 +84,49 @@ function Projects() {
                   ))}
                 </div>
 
-                <div className="project-actions">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live Demo ↗
-                  </a>
+
+                <div className="project-card-actions">
+
+                  <div className="project-external-links">
+
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.title} live demo`}
+                    >
+                      <FaExternalLinkAlt />
+                      <span>Live</span>
+                    </a>
+
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.title} GitHub repository`}
+                    >
+                      <FaGithub />
+                      <span>GitHub</span>
+                    </a>
+
+                  </div>
+
 
                   <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noreferrer"
+                    href={project.caseStudyUrl}
+                    className="project-case-study"
                   >
-                    GitHub ↗
+                    <span>View Case Study</span>
+                    <FaArrowRight />
                   </a>
 
-                  <a href={project.caseStudyUrl}>
-                    Case Study →
-                  </a>
                 </div>
 
               </div>
 
             </article>
           ))}
+
         </div>
 
       </div>

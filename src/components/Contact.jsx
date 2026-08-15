@@ -16,13 +16,12 @@ function Contact() {
 
           <div>
             <p className="section-label">CONTACT</p>
-            <h2>Let&apos;s build something meaningful.</h2>
+            <h2>Let's build something meaningful.</h2>
           </div>
         </div>
 
         <div className="contact-grid">
 
-          {/* LEFT SIDE */}
 
           <div className="contact-connect">
             <p className="contact-kicker">LET'S CONNECT</p>
@@ -32,7 +31,7 @@ function Contact() {
             </h3>
 
             <p className="contact-copy">
-              I’m open to developer opportunities, collaborations, and projects where I can build practical web experiences and continue growing as a developer.
+              I'm open to developer opportunities, collaborations, and projects where I can build practical web experiences and continue growing as a developer.
             </p>
 
             <div className="contact-socials">

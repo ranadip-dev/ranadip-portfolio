@@ -10,24 +10,35 @@ import Journey from './components/Journey'
 import Contact from './components/Contact'
 
 function App() {
+  const path = window.location.pathname
+
+  const isUraanCaseStudy = path === "/projects/uraan"
+
   return (
-  <div className="portfolio-app">
+    <div className="portfolio-app">
 
-    <LatticeBackground />
+      <LatticeBackground />
 
-    <div className="portfolio-content">
-      <Header />
-      <Hero />
-      <Profile />
-      <Skills />
-      <Projects />
-      <UraanCaseStudy />
-      <Journey />
-      <Contact />
+      <div className="portfolio-content">
+
+        {isUraanCaseStudy ? (
+          <UraanCaseStudy />
+        ) : (
+          <>
+            <Header />
+            <Hero />
+            <Profile />
+            <Skills />
+            <Projects />
+            <Journey />
+            <Contact />
+          </>
+        )}
+
+      </div>
+
     </div>
-
-  </div>
-)
+  )
 }
 
 export default App

@@ -8,11 +8,15 @@ import {
   FaDatabase,
   FaGitAlt,
   FaGithub,
+  FaCode,
+  FaServer,
 } from "react-icons/fa"
 
 import {
   SiMysql,
   SiVite,
+  SiCplusplus,
+  SiPython,
 } from "react-icons/si"
 
 const skillGroups = [
@@ -37,14 +41,14 @@ const skillGroups = [
         name: "JavaScript",
         level: "Intermediate",
         levelClass: "intermediate",
-        strength: 72,
+        strength: 60,
         icon: FaJs,
       },
       {
         name: "React",
-        level: "Intermediate",
-        levelClass: "intermediate",
-        strength: 68,
+        level: "Working Knowledge",
+        levelClass: "working",
+        strength: 30,
         icon: FaReact,
       },
       {
@@ -58,13 +62,31 @@ const skillGroups = [
   },
 
   {
+  title: "Programming",
+  skills: [
+    {
+      name: "C++",
+      level: "Intermediate",
+      levelClass: "intermediate",
+      icon: SiCplusplus,
+    },
+    {
+      name: "Python",
+      level: "Intermediate",
+      levelClass: "intermediate",
+      icon: SiPython,
+    },
+  ],
+},
+
+  {
     title: "Backend & Database",
     skills: [
       {
         name: "PHP",
         level: "Intermediate",
         levelClass: "intermediate",
-        strength: 72,
+        strength: 60,
         icon: FaPhp,
       },
       {
@@ -78,7 +100,7 @@ const skillGroups = [
         name: "PDO",
         level: "Intermediate",
         levelClass: "intermediate",
-        strength: 70,
+        strength: 40,
         icon: FaDatabase,
       },
     ],
@@ -105,7 +127,7 @@ const skillGroups = [
         name: "Vite",
         level: "Working Knowledge",
         levelClass: "working",
-        strength: 58,
+        strength: 30,
         icon: SiVite,
       },
       {
@@ -113,19 +135,25 @@ const skillGroups = [
         level: "Advanced",
         levelClass: "advanced",
         strength: 88,
-        icon: FaDatabase,
+        icon: FaCode,
       },
       {
         name: "XAMPP",
         level: "Intermediate",
         levelClass: "intermediate",
         strength: 75,
-        icon: FaDatabase,
+        icon: FaServer,
       },
     ],
   },
 ]
 
+
+const levelStrength = {
+  advanced: "80%",
+  intermediate: "60%",
+  working: "25%",
+}
 
 function Skills() {
   return (
@@ -171,8 +199,8 @@ function Skills() {
 
                       <div className={`skill-progress ${skill.levelClass}`}>
                         <span
-                          style={{ width: `${skill.strength}%` }}
-                        ></span>
+                          style={{ width: levelStrength[skill.levelClass] }} >
+                        </span>
                       </div>
 
                     </article>
