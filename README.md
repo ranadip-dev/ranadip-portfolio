@@ -4,7 +4,7 @@ Personal developer portfolio showcasing my front-end development skills, full-st
 
 ## Live Portfolio
 
-Portfolio: Add live URL after deployment
+Portfolio: https://ranadip-portfolio.vercel.app/
 
 ## About
 
@@ -49,4 +49,4 @@ Full-stack travel booking platform connecting customer booking workflows with ro
 Clone the repository:
 
 ```bash
-git clone https://github.com/ranadip-dev/ranadip-portfolio
+git clone https://github.com/ranadip-dev/ranadip-portfolio.git

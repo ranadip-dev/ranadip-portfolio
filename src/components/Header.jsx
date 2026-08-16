@@ -52,7 +52,7 @@ function Header() {
                             rel="noreferrer"
                             onClick={closeMenu}>GitHub
                         </a>
-                        <a href="/Ranadip_Das_Resume.pdf" className="button" onClick={closeMenu}>Resume</a>
+                        
                     </div>
                 </div>
             </div>
