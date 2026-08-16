@@ -40,27 +40,15 @@ const productViews = [
 
   {
     id: 3,
-    label: "Booking Flow",
-    flow: "Authenticate → Reserve → Track",
-    image: "/manage-user.png",
-  },
-  {
-    id: 4,
     label: "User Workspace",
     flow: "Bookings → Status → Cancel",
     image: "/uraan-user-dashboard.png",
   },
   {
-    id: 5,
+    id: 4,
     label: "Admin Operations",
     flow: "Review → Update → Control",
     image: "/admin-dashboard.png",
-  },
-  {
-    id: 6,
-    label: "Manage Enquiries",
-    flow: "",
-    image: "/manage-enq.png",
   },
 ]
 
@@ -138,7 +126,7 @@ function UraanCaseStudy() {
             </p>
 
             <span className="uraan-compact-label">
-              TECHNOLOGY USED
+              TECH STACK
             </span>
 
             <div className="uraan-compact-stack">

@@ -341,8 +341,6 @@ header nav div a:hover {
 }
 
 
-/* MAIN BUTTON ROW */
-
 .hero-main-actions {
   display: flex;
   align-items: center;
@@ -647,9 +645,7 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   ABOUT / PROFILE
-========================= */
+/* ABOUT & PROFILE */
 
 .profile {
   padding-block: 5rem;
@@ -821,9 +817,7 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   SKILLS
-========================= */
+/* SKILLS*/
 
 .skills {
   padding-block: 4.5rem;
@@ -1131,9 +1125,7 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/* PROJECTS*/
 
 .projects {
   padding-block: 4.75rem;
@@ -2081,9 +2073,8 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   JOURNEY
-========================= */
+/* JOURNEY
+ */
 
 .journey {
   padding-block: 5rem;
@@ -2308,9 +2299,7 @@ header nav div a:hover {
   border-bottom: 0;
 }
 
-/* =========================
-   CERTIFICATES
-========================= */
+/* CERTIFICATES*/
 
 .certificates-header {
   margin-bottom: 1.25rem;
@@ -2489,12 +2478,6 @@ header nav div a:hover {
     padding: 1.1rem;
   }
 }
-
-/* =========================
-   JOURNEY CONTENT REFINEMENT
-   Work Experience + Education
-========================= */
-
 
 /* WORK EXPERIENCE */
 
@@ -2736,9 +2719,8 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT
+*/
 
 .contact {
   position: relative;
@@ -2850,7 +2832,6 @@ header nav div a:hover {
   font-size: 0.84rem;
   line-height: 1.65;
 }
-
 
 /* SOCIAL LINKS */
 
@@ -2973,8 +2954,6 @@ header nav div a:hover {
   font-size: clamp(1.25rem, 2vw, 1.55rem);
   line-height: 1.3;
 }
-
-
 /* FORM */
 
 .contact-form {
@@ -3162,9 +3141,7 @@ header nav div a:hover {
   }
 }
 
-/* =========================
-   PORTFOLIO BACKGROUND
-========================= */
+/*PORTFOLIO BACKGROUND*/
 
 .portfolio-app {
   position: relative;
@@ -3201,9 +3178,7 @@ header nav div a:hover {
   z-index: 1;
 }
 
-/* =========================
-   GLOBAL LATTICE INTEGRATION
-========================= */
+/* GLOBAL LATTICE INTEGRATION*/
 
 .portfolio-app {
   position: relative;
@@ -3256,7 +3231,6 @@ header nav div a:hover {
 
 
 /* MAIN SECTIONS
-   Keep them on the same visual canvas
 */
 
 .hero,
@@ -3270,18 +3244,10 @@ header nav div a:hover {
 }
 
 
-/* REMOVE THE OLD HERO GRID
-   The global lattice now replaces it
-*/
-
 .hero::before {
   display: none;
 }
 
-
-/* TEXT-HEAVY SECTIONS
-   Very subtle dark protection for readability
-*/
 
 .profile,
 .skills,
@@ -3297,9 +3263,9 @@ header nav div a:hover {
 
 
 
-/* =========================
+/*
    CASE STUDY NAVIGATION
-========================= */
+ */
 
 .case-study-nav {
   display: grid;
@@ -3418,8 +3384,6 @@ header nav div a:hover {
 
 
 /* CONTACT
-   Preserve its existing glow while allowing
-   lattice visibility underneath
 */
 
 .contact {
@@ -3442,8 +3406,6 @@ header nav div a:hover {
 
 
 /* HEADER
-   Keeps navigation readable while the lattice
-   moves behind the page
 */
 
 .site-header {
@@ -3455,9 +3417,7 @@ header nav div a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* =========================
-   URAAN CASE STUDY
-========================= */
+/*URAAN CASE STUDY*/
 
 .uraan-case-study {
   padding-block: 1.25rem 4rem;

@@ -1,5 +1,4 @@
 import {
-  FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa"
 import { useState } from "react"

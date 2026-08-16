@@ -55,7 +55,7 @@ function Journey() {
 
           <div>
             <p className="section-label">JOURNEY</p>
-            <h2>Experience, education & growth.</h2>
+            <h2>Experience, education & credentials.</h2>
           </div>
         </div>
 

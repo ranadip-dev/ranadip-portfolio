@@ -48,7 +48,7 @@ function Contact() {
 
           <div>
             <p className="section-label">CONTACT</p>
-            <h2>Let's build something meaningful.</h2>
+            <h2>Get in Touch.</h2>
           </div>
         </div>
 
@@ -59,11 +59,11 @@ function Contact() {
             <p className="contact-kicker">LET'S CONNECT</p>
 
             <h3>
-              Have an opportunity, project or idea in mind?
+              Have a role, project or collaboration in mind?
             </h3>
 
             <p className="contact-copy">
-              I'm open to developer opportunities, collaborations, and projects where I can build practical web experiences and continue growing as a developer.
+              I'm open to front-end opportunities and collaborations where I can contribute to practical, well-built web products.
             </p>
 
             <div className="contact-socials">
@@ -157,6 +157,7 @@ function Contact() {
                 <input
                   id="contact-name"
                   name="name"
+                  autoComplete="name"
                   type="text"
                   placeholder="Your name" required
                 />
@@ -170,6 +171,7 @@ function Contact() {
                 <input
                   id="contact-email"
                   name="email"
+                  autoComplete="email"
                   type="email"
                   placeholder="you@example.com" required
                 />
@@ -210,6 +212,9 @@ function Contact() {
                   ? "error"
                   : ""
             }`}
+
+            role="status"
+            aria-live="polite"
           >
             {status === "success"
               ? "Your Message sent successfully.. I'll get back to you soon."
