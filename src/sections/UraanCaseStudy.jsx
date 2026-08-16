@@ -87,7 +87,7 @@ function UraanCaseStudy() {
           <div className="case-study-nav-links">
 
             <a
-              href="https://uraan-travel-agency.vercel.app/"
+              href="https://uraantravel.infinityfreeapp.com/"
               target="_blank"
               rel="noreferrer"
             >

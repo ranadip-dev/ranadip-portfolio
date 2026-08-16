@@ -14,7 +14,7 @@ const projects = [
       "End-to-end travel booking platform connecting customer workflows with role-based administrative operations.",
     stack: ["PHP", "MySQL", "JavaScript", "PDO"],
     image: "/uraan-home.png",
-    liveUrl: "https://uraan-travel-agency.vercel.app/",
+    liveUrl: "https://uraantravel.infinityfreeapp.com/",
     githubUrl: "https://github.com/ranadip-dev/Uraan_travel_agency",
     caseStudyUrl: "/projects/uraan",
   },
