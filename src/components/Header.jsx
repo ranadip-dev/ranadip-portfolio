@@ -1,4 +1,7 @@
-
+import {
+  FaLinkedinIn,
+  FaGithub,
+} from "react-icons/fa"
 import { useState } from "react"
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -10,24 +13,21 @@ function Header() {
         <header className="site-header">
             <div className="container">
                 <nav className="navbar" aria-label="Main navigation">
-                    <a href="#home" className="navbar-logo" aria-label="Ranadip Das - Home" onClick={closeMenu}>RD<span>.</span></a>
+                    <a href="#home" className="navbar-logo" aria-label="Ranadip Das - Home" onClick={closeMenu}><span>R.D.</span></a>
 
                     <div className="navbar-links">
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
                         <a href="#profile">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
                         <a href="#journey">Journey</a>
                         <a href="#contact">Contact</a>
                     </div>
 
                     <div className="navbar-actions">
                         <a href="https://github.com/ranadip-dev" target="_blank" rel="noreferrer">
-                        GitHub
+                        <FaGithub /> GitHub
                         </a>
 
-                        <a href="/Ranadip_Das_Resume.pdf" className="button">
-                            Resume
-                        </a>
                     </div>
 
                     <button className={`menu-toggle ${menuOpen ? 'is-open' : ''}`}

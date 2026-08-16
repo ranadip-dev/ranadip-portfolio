@@ -17,12 +17,11 @@ function Hero() {
           </h1>
 
           <h2>
-            I build clean, practical web experiences.
+            I build responsive interfaces and complete web applications.
           </h2>
 
           <p className="hero-description">
-            Developer focused on responsive interfaces and complete web
-            applications using React, JavaScript, PHP and MySQL.
+            Front-end focused developer with hands-on experience building connected, database-driven web applications.
           </p>
 
           <div className="hero-actions">
@@ -39,7 +38,7 @@ function Hero() {
                 rel="noreferrer"
                 className="button hero-resume"
               >
-                Download My CV📄
+                Download Resume📄
               </a>
 
             </div>

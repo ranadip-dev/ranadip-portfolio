@@ -1,3 +1,6 @@
+import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
+
 import {
   FaEnvelope,
   FaLinkedinIn,
@@ -7,6 +10,35 @@ import {
 } from "react-icons/fa"
 
 function Contact() {
+  const formRef = useRef(null)
+
+  const [status, setStatus] = useState("idle")
+
+  const sendEmail = async (event) => {
+    event.preventDefault()
+
+    if (!formRef.current || status === "sending") return
+
+    setStatus("sending")
+
+    try {
+      await emailjs.sendForm(
+        "service_0wlss6t",
+        "template_sl1jk4e",
+        formRef.current,
+        {
+          publicKey: "prmY0342ggnVHl8Tn",
+        }
+      )
+
+      setStatus("success")
+      formRef.current.reset()
+    } catch (error) {
+      console.error("EmailJS error:", error)
+      setStatus("error")
+    }
+  }
+
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
@@ -51,7 +83,7 @@ function Contact() {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ranadip-das-a39998234/"
                 target="_blank"
                 rel="noreferrer"
                 className="contact-social"
@@ -67,7 +99,7 @@ function Contact() {
               </a>
 
               <a
-                href="#"
+                href="https://github.com/ranadip-dev"
                 target="_blank"
                 rel="noreferrer"
                 className="contact-social"
@@ -94,7 +126,7 @@ function Contact() {
 
                 <span>
                   <small>Resume</small>
-                  <strong>View resume ↗</strong>
+                  <strong>Download resume</strong>
                 </span>
               </a>
 
@@ -111,7 +143,11 @@ function Contact() {
               <h3>Start a conversation.</h3>
             </div>
 
-            <form className="contact-form">
+            <form
+              ref={formRef}
+              className="contact-form"
+              onSubmit={sendEmail}
+            >
 
               <div className="contact-field">
                 <label htmlFor="contact-name">
@@ -120,8 +156,9 @@ function Contact() {
 
                 <input
                   id="contact-name"
+                  name="name"
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Your name" required
                 />
               </div>
 
@@ -132,8 +169,9 @@ function Contact() {
 
                 <input
                   id="contact-email"
+                  name="email"
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder="you@example.com" required
                 />
               </div>
 
@@ -144,24 +182,41 @@ function Contact() {
 
                 <textarea
                   id="contact-message"
+                  name="message"
                   rows="5"
-                  placeholder="Tell me about the opportunity or project..."
+                  placeholder="Tell me about the opportunity or project..." required
                 />
               </div>
 
-              <button
-                type="button"
-                className="contact-submit"
-              >
-                <span>Send Message</span>
-                <FaPaperPlane />
-              </button>
+            <button
+              type="submit"
+              className="contact-submit"
+              disabled={status === "sending"}
+            >
+              <span>
+                {status === "sending" ? "Sending..." : "Send Message"}
+              </span>
+
+              <FaPaperPlane />
+            </button>
 
             </form>
 
-            <p className="contact-form-note">
-              I'll get back to you soon.
-            </p>
+          <p
+            className={`contact-form-note ${
+              status === "success"
+                ? "success"
+                : status === "error"
+                  ? "error"
+                  : ""
+            }`}
+          >
+            {status === "success"
+              ? "Your Message sent successfully.. I'll get back to you soon."
+              : status === "error"
+                ? "Something went wrong. Please try again or email me directly."
+                : "I'll get back to you soon."}
+          </p>
 
           </div>
 
@@ -172,6 +227,8 @@ function Contact() {
           <span>
             © 2026 - All Rights Reserved.
           </span>
+
+          <span>Thanks for scrolling !!</span>
 
           <span className="footer-mark">
             Ranadip Das

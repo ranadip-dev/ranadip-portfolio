@@ -8,7 +8,7 @@ function Profile() {
 
           <div>
             <p className="section-label">ABOUT ME</p>
-            <h2>Developer with a practical approach.</h2>
+            <h2>Front-end focused. Full-stack capable.</h2>
           </div>
         </div>
 
@@ -16,14 +16,11 @@ function Profile() {
 
           <div className="profile-intro">
             <p>
-              I'm a developer focused on building clean, responsive
-              interfaces and practical full-stack web applications.
+              I approach development from the complete application workflow, not just the interface.
             </p>
 
             <p>
-              My work combines front-end development with hands-on backend
-              experience using PHP and MySQL, giving me an understanding of
-              complete application workflows rather than isolated interfaces.
+              My front-end work is supported by hands-on backend experience with PHP and MySQL, helping me understand how interfaces connect with authentication, application logic and relational data.
             </p>
           </div>
 
@@ -35,13 +32,13 @@ function Profile() {
             </div>
 
             <div className="profile-detail">
-              <span>ALSO BUILDING</span>
-              <strong>Full-Stack Applications</strong>
+              <span>FULL-STACK EXPERIENCE</span>
+              <strong>PHP · MySQL · Application Workflows</strong>
             </div>
 
             <div className="profile-detail">
-              <span>CORE STACK</span>
-              <strong>React · JavaScript · PHP · MySQL</strong>
+              <span>CORE FRONT-END</span>
+              <strong>HTML · CSS · JavaScript · React</strong>
             </div>
 
           </div>
