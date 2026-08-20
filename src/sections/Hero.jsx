@@ -46,7 +46,7 @@ function Hero() {
             <div className="hero-socials">
 
               <a
-                href="https://www.linkedin.com/in/ranadip-das-a39998234/"
+                href="https://www.linkedin.com/in/ranadip-das-dev/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"

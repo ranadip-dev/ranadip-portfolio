@@ -83,7 +83,7 @@ function Contact() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/ranadip-das-a39998234/"
+                href="https://www.linkedin.com/in/ranadip-das-dev/"
                 target="_blank"
                 rel="noreferrer"
                 className="contact-social"
@@ -233,7 +233,7 @@ function Contact() {
             © 2026 - All Rights Reserved.
           </span>
 
-          <span>Thanks for scrolling !!</span>
+          <span>Thank You!</span>
 
           <span className="footer-mark">
             Ranadip Das
