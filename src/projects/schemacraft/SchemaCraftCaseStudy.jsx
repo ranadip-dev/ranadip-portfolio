@@ -10,54 +10,48 @@ const projectCore = [
   {
     label: "PRODUCT",
     value:
-      "Booking, customer accounts and administrative operations in one connected workflow.",
+      "Visual database design, relationship modeling and SQL generation inside one interactive workspace.",
   },
   {
-    label: "ENGINEERING",
+    label: "FRONTEND",
     value:
-      "Role-based access, sessions, PDO, prepared statements and server-side validation.",
+      "Custom React Flow nodes, draggable schema tables, dynamic state updates and column-level connections.",
   },
   {
-    label: "DATA",
+    label: "LOGIC",
     value:
-      "Users, packages, bookings and enquiries connected through a relational MySQL backend.",
+      "Primary-key validation, compatible foreign-key relationships, persistence and structured SQL generation.",
   },
 ]
 
 const productViews = [
   {
     id: 1,
-    label: "Customer Experience",
-    flow: "Discover → Package → Book",
-    image: "/uraan-home2.png",
+    label: "Visual Schema Workspace",
+    flow: "Create → Configure → Connect",
+    image: "/SchemaCraft_img/schemacraft-workspace.png",
   },
-    {
+  {
     id: 2,
-    label: "Package List",
-    flow: "Package → Book",
-    image: "/package-list.png",
+    label: "Column Relationships",
+    flow: "Primary Key → Foreign Key → Validate",
+    image: "/SchemaCraft_img/schemacraft-relationships.png",
   },
-
   {
     id: 3,
-    label: "User Workspace",
-    flow: "Bookings → Status → Cancel",
-    image: "/uraan-user-dashboard.png",
-  },
-  {
-    id: 4,
-    label: "Admin Operations",
-    flow: "Review → Update → Control",
-    image: "/admin-dashboard.png",
+    label: "Generated SQL",
+    flow: "Visual Schema → Validation → SQL",
+    image: "/SchemaCraft_img/schemacraft-sql.png",
   },
 ]
 
-function UraanCaseStudy() {
+function SchemaCraftCaseStudy() {
   const [activeView, setActiveView] = useState(0)
+
   const currentView = productViews[activeView]
 
   const showPrevious = () => {
-  setActiveView((current) => Math.max(current - 1, 0))
+    setActiveView((current) => Math.max(current - 1, 0))
   }
 
   const showNext = () => {
@@ -67,10 +61,10 @@ function UraanCaseStudy() {
   }
 
   return (
+    <section className="case-study">
+      <div className="case-study-container">
 
-    <section className="uraan-case-study">
-      <div className="uraan-container">
-
+        {/* NAVIGATION */}
 
         <nav
           className="case-study-nav"
@@ -87,7 +81,7 @@ function UraanCaseStudy() {
           <div className="case-study-nav-links">
 
             <a
-              href="https://uraantravel.infinityfreeapp.com/"
+              href="https://schema-craft-gamma.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -96,7 +90,7 @@ function UraanCaseStudy() {
             </a>
 
             <a
-              href="https://github.com/ranadip-dev/Uraan_travel_agency"
+              href="https://github.com/ranadip-dev/SchemaCraft"
               target="_blank"
               rel="noreferrer"
             >
@@ -110,53 +104,53 @@ function UraanCaseStudy() {
 
         {/* HERO */}
 
-        <section className="uraan-compact-hero">
+        <section className="case-study-hero">
 
-          <div className="uraan-compact-copy">
+          <div className="case-study-hero-copy">
 
-            <span className="uraan-compact-label">
-              FULL-STACK · 2026
+            <span className="case-study-label">
+              FRONTEND · 2026
             </span>
 
-            <h1>Uraan Travel Agency</h1>
+            <h1>SchemaCraft</h1>
 
             <p>
-              Full-stack travel booking platform with connected
-              customer and administrative workflows.
+              Visual database schema designer for creating tables,
+              modeling relationships and generating executable SQL
+              through an interactive React workspace.
             </p>
 
             <span className="uraan-compact-label">
               TECH STACK
             </span>
 
-            <div className="uraan-compact-stack">
-              
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>PHP</span>
-              <span>MySQL</span>
+            <div className="case-study-stack">
+              <span>React</span>
               <span>JavaScript</span>
-              <span>PDO</span>
+              <span>Vite</span>
+              <span>React Flow</span>
+              <span>CSS</span>
+              <span>Web APIs</span>
             </div>
 
           </div>
 
 
-          <div className="uraan-compact-preview">
+          <div className="case-study-preview">
             <img
-              src="/uraan-home.png"
-              alt="Uraan Travel Agency application preview"
+              src="/SchemaCraft_img/schemacraft-workspace.png"
+              alt="SchemaCraft visual database designer"
             />
           </div>
 
         </section>
 
 
-  
+        {/* PROJECT CORE */}
 
-        <section className="uraan-core">
+        <section className="case-study-core">
 
-          <div className="uraan-mini-heading">
+          <div className="case-study-mini-heading">
             <span>PROJECT CORE</span>
           </div>
 
@@ -164,7 +158,7 @@ function UraanCaseStudy() {
 
             {projectCore.map((item) => (
               <article
-                className="uraan-core-card"
+                className="case-study-core-card"
                 key={item.label}
               >
                 <span>{item.label}</span>
@@ -176,15 +170,18 @@ function UraanCaseStudy() {
 
         </section>
 
-        <section className="uraan-showcase">
 
-          <div className="uraan-mini-heading">
+        {/* PRODUCT IN ACTION */}
+
+        <section className="case-study-showcase">
+
+          <div className="case-study-mini-heading">
             <span>PRODUCT IN ACTION</span>
           </div>
 
-          <div className="uraan-showcase-frame">
+          <div className="case-study-showcase-frame">
 
-            <div className="uraan-showcase-image">
+            <div className="case-study-showcase-image">
               <img
                 key={currentView.image}
                 src={currentView.image}
@@ -193,9 +190,9 @@ function UraanCaseStudy() {
             </div>
 
 
-            <div className="uraan-showcase-caption">
+            <div className="case-study-showcase-caption">
 
-              <div className="uraan-showcase-info">
+              <div className="case-study-showcase-info">
 
                 <span>
                   0{currentView.id} / 0{productViews.length}
@@ -209,7 +206,7 @@ function UraanCaseStudy() {
               </div>
 
 
-              <div className="uraan-showcase-controls">
+              <div className="case-study-showcase-controls">
 
                 <button
                   type="button"
@@ -222,7 +219,7 @@ function UraanCaseStudy() {
                 </button>
 
 
-                <div className="uraan-showcase-dots">
+                <div className="case-study-showcase-dots">
 
                   {productViews.map((view, index) => (
                     <button
@@ -259,74 +256,81 @@ function UraanCaseStudy() {
 
         </section>
 
-        <section className="uraan-engineering">
 
-          <div className="uraan-mini-heading">
+        {/* ENGINEERING PROOF */}
+
+        <section className="case-study-engineering">
+
+          <div className="case-study-mini-heading">
             <span>ENGINEERING PROOF</span>
           </div>
 
-          <div className="uraan-engineering-grid">
+          <div className="case-study-engineering-grid">
 
-            <article className="uraan-proof-card">
+            <article className="case-study-proof-card">
 
-              <span className="uraan-proof-label">
-                SERVER-SIDE OWNERSHIP
+              <span className="case-study-proof-label">
+                RELATIONSHIP MODEL
               </span>
 
               <h3>
-                Booking access is enforced using the
-                authenticated user ID.
+                Visual connections are stored as structured
+                database relationships instead of UI-only lines.
               </h3>
 
               <code>
-                WHERE id = :id
+                sourceTableId
                 <br />
-                AND user_id = :user_id
+                sourceColumnId
                 <br />
-                AND booking_status = 'Pending'
+                targetTableId
+                <br />
+                targetColumnId
               </code>
 
             </article>
 
 
-            <article className="uraan-proof-card">
+            <article className="case-study-proof-card">
 
-              <span className="uraan-proof-label">
+              <span className="case-study-proof-label">
                 APPLICATION FLOW
               </span>
 
-              <div className="uraan-flow-stack">
+              <div className="case-study-flow-stack">
 
                 <div>
-                  <span>CLIENT</span>
+                  <span>INTERFACE</span>
                   <strong>
-                    HTML · CSS · JavaScript
+                    React · React Flow
                   </strong>
                 </div>
 
                 <i>↓</i>
 
                 <div>
-                  <span>APPLICATION</span>
+                  <span>SCHEMA STATE</span>
                   <strong>
-                    PHP · Sessions · Roles
+                    Tables · Columns · Keys
                   </strong>
                 </div>
 
                 <i>↓</i>
 
                 <div>
-                  <span>DATA ACCESS</span>
+                  <span>VALIDATION</span>
                   <strong>
-                    PDO · Prepared Statements
+                    Types · PK · Relationships
                   </strong>
                 </div>
 
                 <i>↓</i>
 
                 <div>
-                  <span>DATABASE</span>
-                  <strong>MySQL</strong>
+                  <span>OUTPUT</span>
+                  <strong>
+                    Generated SQL
+                  </strong>
                 </div>
 
               </div>
@@ -342,4 +346,4 @@ function UraanCaseStudy() {
   )
 }
 
-export default UraanCaseStudy
+export default SchemaCraftCaseStudy

@@ -1203,8 +1203,7 @@ header nav div a:hover {
 
 .project-card-image {
   position: relative;
-
-  aspect-ratio: 16 / 8;
+  display: flex;
 
   overflow: hidden;
 
@@ -1322,16 +1321,7 @@ header nav div a:hover {
   letter-spacing: -0.025em;
 }
 
-.project-index {
-  flex-shrink: 0;
 
-  color: rgba(111, 229, 234, 0.58);
-
-  font-size: 0.7rem;
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-}
 
 .project-card-description {
   max-width: 620px;
@@ -2033,7 +2023,7 @@ header nav div a:hover {
 
 @media (max-width: 850px) {
 
-  .uraan-case-study {
+  .case-study {
     padding-block: 4rem;
   }
 
@@ -3237,7 +3227,7 @@ header nav div a:hover {
 .profile,
 .skills,
 .projects,
-.uraan-case-study,
+.case-study,
 .journey,
 .contact {
   background: transparent;
@@ -3419,11 +3409,11 @@ header nav div a:hover {
 
 /*URAAN CASE STUDY*/
 
-.uraan-case-study {
+.case-study {
   padding-block: 1.25rem 4rem;
 }
 
-.uraan-container {
+.case-study-container {
   width: min(
     100% - (var(--container-padding) * 2),
     var(--container-width)
@@ -3486,7 +3476,7 @@ header nav div a:hover {
 
 /* HERO */
 
-.uraan-compact-hero {
+.case-study-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
 
@@ -3497,11 +3487,11 @@ header nav div a:hover {
   padding-block: 1.5rem 2.5rem;
 }
 
-.uraan-compact-copy {
+.case-study-hero-copy {
   max-width: 560px;
 }
 
-.uraan-compact-label {
+.case-study-label {
   display: block;
 
   margin-bottom: 0.6rem;
@@ -3514,7 +3504,7 @@ header nav div a:hover {
   letter-spacing: 0.11em;
 }
 
-.uraan-compact-copy h1 {
+.case-study-hero-copy h1 {
   margin: 0 0 0.7rem;
 
   color: var(--color-text);
@@ -3525,7 +3515,7 @@ header nav div a:hover {
   letter-spacing: -0.045em;
 }
 
-.uraan-compact-copy > p {
+.case-study-hero-copy > p {
   max-width: 520px;
 
   margin: 0 0 1rem;
@@ -3536,14 +3526,14 @@ header nav div a:hover {
   line-height: 1.65;
 }
 
-.uraan-compact-stack {
+.case-study-stack {
   display: flex;
   flex-wrap: wrap;
 
   gap: 0.4rem;
 }
 
-.uraan-compact-stack span {
+.case-study-stack span {
   padding: 0.28rem 0.55rem;
 
   border: 1px solid var(--color-border);
@@ -3554,10 +3544,9 @@ header nav div a:hover {
   font-size: 0.62rem;
 }
 
-.uraan-compact-preview {
+.case-study-preview {
   overflow: hidden;
-
-  aspect-ratio: 16 / 9;
+  display: block;
 
   border: 1px solid var(--color-border);
   border-radius: 0.9rem;
@@ -3565,7 +3554,7 @@ header nav div a:hover {
   background: rgba(255, 255, 255, 0.015);
 }
 
-.uraan-compact-preview img {
+.case-study-preview img {
   width: 100%;
   height: 100%;
 
@@ -3577,7 +3566,7 @@ header nav div a:hover {
 
 /* MINI SECTION HEADING */
 
-.uraan-mini-heading {
+.case-study-mini-heading {
   display: flex;
   align-items: center;
 
@@ -3586,7 +3575,7 @@ header nav div a:hover {
   margin-bottom: 0.9rem;
 }
 
-.uraan-mini-heading span {
+.case-study-mini-heading span {
   color: var(--color-text-secondary);
 
   font-size: 0.62rem;
@@ -3595,7 +3584,7 @@ header nav div a:hover {
   letter-spacing: 0.11em;
 }
 
-.uraan-mini-heading::after {
+.case-study-mini-heading::after {
   content: "";
 
   flex: 1;
@@ -3613,7 +3602,7 @@ header nav div a:hover {
 
 /* PROJECT CORE */
 
-.uraan-core {
+.case-study-core {
   padding-block: 2rem 2.5rem;
 }
 
@@ -3624,7 +3613,7 @@ header nav div a:hover {
   gap: 0.8rem;
 }
 
-.uraan-core-card {
+.case-study-core-card {
   min-height: 105px;
 
   padding: 1rem;
@@ -3640,7 +3629,7 @@ header nav div a:hover {
     );
 }
 
-.uraan-core-card > span {
+.case-study-core-card > span {
   display: block;
 
   margin-bottom: 0.55rem;
@@ -3653,7 +3642,7 @@ header nav div a:hover {
   letter-spacing: 0.09em;
 }
 
-.uraan-core-card p {
+.case-study-core-card p {
   margin: 0;
 
   color: var(--color-text-secondary);
@@ -3665,11 +3654,11 @@ header nav div a:hover {
 
 /* PRODUCT SHOWCASE */
 
-.uraan-showcase {
+.case-study-showcase {
   padding-block: 2rem 2.5rem;
 }
 
-.uraan-showcase-frame {
+.case-study-showcase-frame {
   overflow: hidden;
 
   border: 1px solid var(--color-border);
@@ -3683,8 +3672,8 @@ header nav div a:hover {
     );
 }
 
-.uraan-showcase-image {
-  aspect-ratio: 16 / 9;
+.case-study-showcase-image {
+  aspect-ratio: 17/8;
 
   overflow: hidden;
 
@@ -3693,7 +3682,7 @@ header nav div a:hover {
   background: var(--color-surface);
 }
 
-.uraan-showcase-image img {
+.case-study-showcase-image img {
   width: 100%;
   height: 100%;
 
@@ -3716,7 +3705,7 @@ header nav div a:hover {
   }
 }
 
-.uraan-showcase-caption {
+.case-study-showcase-caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3726,21 +3715,21 @@ header nav div a:hover {
   padding: 0.85rem 1rem;
 }
 
-.uraan-showcase-info {
+.case-study-showcase-info {
   display: flex;
   align-items: center;
 
   gap: 0.75rem;
 }
 
-.uraan-showcase-info > span {
+.case-study-showcase-info > span {
   color: var(--color-accent);
 
   font-size: 0.64rem;
   font-weight: 700;
 }
 
-.uraan-showcase-info h3 {
+.case-study-showcase-info h3 {
   margin: 0 0 0.15rem;
 
   color: var(--color-text);
@@ -3748,7 +3737,7 @@ header nav div a:hover {
   font-size: 0.86rem;
 }
 
-.uraan-showcase-info p {
+.case-study-showcase-info p {
   margin: 0;
 
   color: var(--color-text-secondary);
@@ -3756,14 +3745,14 @@ header nav div a:hover {
   font-size: 0.66rem;
 }
 
-.uraan-showcase-dots {
+.case-study-showcase-dots {
   display: flex;
   align-items: center;
 
   gap: 0.4rem;
 }
 
-.uraan-showcase-dots button {
+.case-study-showcase-dots button {
   width: 7px;
   height: 7px;
 
@@ -3782,7 +3771,7 @@ header nav div a:hover {
     background var(--transition-fast);
 }
 
-.uraan-showcase-dots button.active {
+.case-study-showcase-dots button.active {
   width: 20px;
 
   border-radius: 999px;
@@ -3792,7 +3781,7 @@ header nav div a:hover {
 
 /* PRODUCT SHOWCASE CONTROLS */
 
-.uraan-showcase-controls {
+.case-study-showcase-controls {
   display: flex;
   align-items: center;
 
@@ -3845,14 +3834,14 @@ header nav div a:hover {
 
 /* DOTS */
 
-.uraan-showcase-dots {
+.case-study-showcase-dots {
   display: flex;
   align-items: center;
 
   gap: 0.38rem;
 }
 
-.uraan-showcase-dots button {
+.case-study-showcase-dots button {
   width: 7px;
   height: 7px;
 
@@ -3870,7 +3859,7 @@ header nav div a:hover {
     background var(--transition-fast);
 }
 
-.uraan-showcase-dots button.active {
+.case-study-showcase-dots button.active {
   width: 20px;
 
   background: var(--color-accent);
@@ -3879,18 +3868,18 @@ header nav div a:hover {
 
 /* ENGINEERING */
 
-.uraan-engineering {
+.case-study-engineering {
   padding-block: 2rem 1rem;
 }
 
-.uraan-engineering-grid {
+.case-study-engineering-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   gap: 0.8rem;
 }
 
-.uraan-proof-card {
+.case-study-proof-card {
   min-height: 210px;
 
   padding: 1rem;
@@ -3906,7 +3895,7 @@ header nav div a:hover {
     );
 }
 
-.uraan-proof-label {
+.case-study-proof-label {
   display: block;
 
   margin-bottom: 0.7rem;
@@ -3919,7 +3908,7 @@ header nav div a:hover {
   letter-spacing: 0.09em;
 }
 
-.uraan-proof-card h3 {
+.case-study-proof-card h3 {
   max-width: 470px;
 
   margin: 0 0 1rem;
@@ -3930,7 +3919,7 @@ header nav div a:hover {
   line-height: 1.45;
 }
 
-.uraan-proof-card code {
+.case-study-proof-card code {
   display: inline-block;
 
   padding: 0.7rem 0.8rem;
@@ -3949,13 +3938,13 @@ header nav div a:hover {
 
 /* APP FLOW */
 
-.uraan-flow-stack {
+.case-study-flow-stack {
   display: grid;
 
   gap: 0.35rem;
 }
 
-.uraan-flow-stack div {
+.case-study-flow-stack div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3968,21 +3957,21 @@ header nav div a:hover {
   border-radius: 0.5rem;
 }
 
-.uraan-flow-stack div span {
+.case-study-flow-stack div span {
   color: var(--color-accent);
 
   font-size: 0.55rem;
   font-weight: 700;
 }
 
-.uraan-flow-stack div strong {
+.case-study-flow-stack div strong {
   color: var(--color-text);
 
   font-size: 0.64rem;
   font-weight: 500;
 }
 
-.uraan-flow-stack i {
+.case-study-flow-stack i {
   text-align: center;
 
   color: var(--color-text-secondary);
@@ -3996,7 +3985,7 @@ header nav div a:hover {
 
 @media (max-width: 900px) {
 
-  .uraan-compact-hero {
+  .case-study-hero {
     grid-template-columns: 1fr;
   }
 
@@ -4004,7 +3993,7 @@ header nav div a:hover {
     grid-template-columns: 1fr;
   }
 
-  .uraan-engineering-grid {
+  .case-study-engineering-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -4012,7 +4001,7 @@ header nav div a:hover {
 
 @media (max-width: 600px) {
 
-  .uraan-case-study {
+  .case-study {
     padding-block: 1rem 3rem;
   }
 
@@ -4021,7 +4010,7 @@ header nav div a:hover {
     display: none;
   }
 
-  .uraan-showcase-caption {
+  .case-study-showcase-caption {
     align-items: flex-start;
     flex-direction: column;
   }

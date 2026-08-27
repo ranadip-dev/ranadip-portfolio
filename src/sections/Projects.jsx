@@ -13,11 +13,26 @@ const projects = [
     description:
       "End-to-end travel booking platform connecting customer workflows with role-based administrative operations.",
     stack: ["PHP", "MySQL", "JavaScript", "PDO"],
-    image: "/uraan-home.png",
+    image: "/uraan/uraan-home.png",
     liveUrl: "https://uraantravel.infinityfreeapp.com/",
     githubUrl: "https://github.com/ranadip-dev/Uraan_travel_agency",
     caseStudyUrl: "/projects/uraan",
   },
+
+  {
+    id: "SchemaCraft",
+    badge: "FRONTEND",
+    title: "SchemaCraft",
+    type: "Visual Database Designer",
+    description:
+      "Interactive database schema designer for building tables, defining relationships, and generating SQL through a visual workspace.",
+    stack: ["React", "Vite", "JavaScript", "CSS", "React Flow"],
+    image: "./SchemaCraft_img/schemacraft-relationships.png",
+    liveUrl: "https://schema-craft-gamma.vercel.app/",
+    githubUrl: "https://github.com/ranadip-dev/SchemaCraft",
+    caseStudyUrl: "/projects/schemacraft",
+  },
+
 ]
 
 function Projects() {
@@ -64,10 +79,6 @@ function Projects() {
 
                     <h3>{project.title}</h3>
                   </div>
-
-                  <span className="project-index">
-                    01
-                  </span>
                 </div>
 
 
