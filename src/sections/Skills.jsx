@@ -161,8 +161,6 @@ function Skills() {
       <div className="skills-container">
 
         <div className="section-heading">
-          <span className="section-number">02</span>
-
           <div>
             <p className="section-label">SKILLS</p>
             <h2>Technologies I work with.</h2>

@@ -9,7 +9,7 @@ function Hero() {
       <div className="hero-content">
 
         <div className="hero-copy">
-          <p className="hero-eyebrow">FRONT-END DEVELOPMENT · FULL-STACK PROJECTS</p>
+          <p className="hero-eyebrow">FRONT-END DEVELOPER</p>
 
           <h1>
             Hi, I'm <span>Ranadip Das</span>

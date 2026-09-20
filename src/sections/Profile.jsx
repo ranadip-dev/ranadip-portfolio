@@ -4,8 +4,6 @@ function Profile() {
       <div className="profile-container">
 
         <div className="section-heading">
-          <span className="section-number">01</span>
-
           <div>
             <p className="section-label">ABOUT ME</p>
             <h2>Front-end focused. Full-stack capable.</h2>

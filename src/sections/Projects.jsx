@@ -6,6 +6,19 @@ import {
 
 const projects = [
   {
+  id: "flexfit",
+  badge: "FRONTEND",
+  title: "FlexFit Gym",
+  type: "Fitness & Membership Platform",
+  description:
+    "Responsive fitness platform combining cinematic design with program discovery, membership plans, trainer profiles, and WhatsApp-based trial enquiries.",
+  stack: ["React", "Vite", "React Router", "JavaScript", "CSS"],
+  image: "/flexfit/flexfit-home.png",
+  liveUrl: "https://flexfit-gym-tau.vercel.app/",
+  githubUrl: "https://github.com/ranadip-dev/flexfit-gym",
+  caseStudyUrl: "/projects/flexfit",
+  },
+  {
     id: "uraan",
     badge: "FULL-STACK",
     title: "Uraan Travel Agency",
@@ -41,7 +54,6 @@ function Projects() {
       <div className="projects-container">
 
         <div className="section-heading">
-          <span className="section-number">03</span>
 
           <div>
             <p className="section-label">PROJECTS</p>

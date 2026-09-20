@@ -19,20 +19,21 @@ const journeyTabs = [
 const certificates = [
   {
     id: 1,
+    title: "Introduction to Front End Development",
+    issuer: "Simplilearn | SkillUp",
+    period: "20th September 2026",
+    image: "/Simplilearn_Certificate_Frontend.png",
+    tags: ["HTML", "CSS", "JavaScript", "ReactJS", "Angular"],
+  },
+  {
+    id: 2,
     title: "Industrial Training: Web Development Using PHP",
     issuer: "Ardent Computech Pvt. Ltd.",
     period: "Aug 2022 - Sep 2022",
     image: "/certificate-php.jpg",
     tags: ["PHP", "Web Development", "Industrial Training"],
   },
-  {
-    id: 2,
-    title: "Certificate Title",
-    issuer: "Issuing Organization",
-    period: "Year",
-    image: "/certificate-02.jpg",
-    tags: ["Skill", "Technology"],
-  },
+  
   {
     id: 3,
     title: "Certificate Title",

@@ -44,8 +44,6 @@ function Contact() {
       <div className="contact-container">
 
         <div className="section-heading">
-          <span className="section-number">05</span>
-
           <div>
             <p className="section-label">CONTACT</p>
             <h2>Get in Touch.</h2>
