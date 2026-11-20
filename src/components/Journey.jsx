@@ -19,6 +19,14 @@ const journeyTabs = [
 const certificates = [
   {
     id: 1,
+    title: "Deep Learning with Generative AI",
+    issuer: "Indian Institute of Internship",
+    period: "Jul 2026 - Aug 2026",
+    image: "/Ranadip_Das_NIIT.png",
+    tags: ["Deep Learning"],
+  },
+  {
+    id: 2,
     title: "Introduction to Front End Development",
     issuer: "Simplilearn | SkillUp",
     period: "20th September 2026",
@@ -26,7 +34,7 @@ const certificates = [
     tags: ["HTML", "CSS", "JavaScript", "ReactJS", "Angular"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Industrial Training: Web Development Using PHP",
     issuer: "Ardent Computech Pvt. Ltd.",
     period: "Aug 2022 - Sep 2022",
@@ -34,14 +42,6 @@ const certificates = [
     tags: ["PHP", "Web Development", "Industrial Training"],
   },
   
-  {
-    id: 3,
-    title: "Certificate Title",
-    issuer: "Issuing Organization",
-    period: "Year",
-    image: "/certificate-03.jpg",
-    tags: ["Skill", "Technology"],
-  },
 ]
 
 function Journey() {
@@ -52,7 +52,6 @@ function Journey() {
       <div className="journey-container">
 
         <div className="section-heading">
-          <span className="section-number">04</span>
 
           <div>
             <p className="section-label">JOURNEY</p>
